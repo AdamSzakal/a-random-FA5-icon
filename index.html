@@ -6,6 +6,10 @@
 	<title>A random FA5 icon name</title>
 </head>
 <style>
+	@keyframes example {
+		from {background-color: red;} 
+		to {background-color: yellow;}
+	}
 	body { 
 		display: flex;
 		flex-direction: column;
@@ -1055,8 +1059,14 @@
 			setTimeout(
 				function(){
 					button.innerText = "Copy result 📋"
-			}, 5000);
+				}, 5000);
 		}
-	</script>
-</body>
-</html>
+
+		// styled console output test
+		console.info('%c  We\'re hiring!  ', 'display: inline-block; font-family: Inter,sans-serif; font-style: normal; font-weight: 600; font-style: italic; font-size: 14px; line-height: 32px; color: white; background: #41CA49; border-radius: 4px;');
+
+		console.info('%c  --> jobs.gpsgate.com  ', 'display: inline-block; font-family: Inter,sans-serif; font-style: normal; font-weight: 400; font-size: 14px; line-height: 32px; color: white; background: #051c2c; border-radius: 4px;')
+
+		</script>
+	</body>
+	</html>
